@@ -1,0 +1,1721 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400, 400italic, 700, 700italic);
+    @import url(https: //fonts.googleapis.com/css?family=Roboto:400, 700);
+    #lu-gh .scroll-textarea>.scroll-content>textarea, #lu-gh .scroll-wrapper>.scroll-content {
+    position: relative!important;
+    margin: 0;
+    overflow-x: hidden!important;
+    max-width: none!important;
+}
+html {
+    margin-top: 44px!important;
+}
+#lu-gh {
+    z-index: 99999;
+}
+#lu-gh img {
+    display: inline!important;
+}
+.lu-gh-hide {
+    display: none!important;
+}
+.lu-gh-container {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1500;
+}
+#lu-gh-content {
+    background: #fff;
+    left: 0;
+    top: -99999px;
+    min-height: 50px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+#lu-gh-content.lu-gh-content-auto {
+    width: auto;
+    min-width: 0;
+}
+#lu-gh-content.lu-gh-content-auto .lu-gh-cache-content {
+    width: auto;
+}
+#lu-gh-content.lu-gh-content-auto ul {
+    list-style: none;
+}
+#lu-gh-content.lu-gh-visible {
+    z-index: 4;
+}
+#lu-gh-content .lu-gh-cache-content {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+#lu-gh-bar {
+    background: #222;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+    min-width: 1024px!important;
+}
+#lu-gh-links, #lu-gh-user, #lu-gh-user-container {
+    display: none;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    height: 27px;
+}
+#lu-gh-user-container {
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 0;
+}
+#lu-gh-links {
+    display: block;
+    height: auto;
+}
+#lu-gh-user {
+    float: right;
+    height: auto;
+}
+#lu-gh-user.lu-gh-loggedIn {
+    padding-right: 44px;
+}
+#lu-gh-links li, #lu-gh-user li, #lu-gh-user-container li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#lu-gh-links li a img {
+    padding: 4px 0 0;
+}
+#lu-gh-links li a, #lu-gh-user li a, #lu-gh-user-container li a {
+    border: none;
+    color: #ccc;
+    float: left;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 20px;
+    outline: 0;
+    padding: 13px 0;
+    text-decoration: none;
+    vertical-align: middle;
+    position: relative;
+    transition: color .25s ease-in-out, opacity .25s ease-in-out;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#lu-gh-bar .lu-gh-loggedIn li a, #lu-gh-bar .lu-gh-loggedIn li:hover a {
+    padding: 13px 17px 12px 13px;
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/DropdownArrow.svg)center right no-repeat;
+    background-size: 10px 7px;
+    margin: 0;
+    border-right: 13px solid #222;
+}
+#lu-gh-bar .lu-gh-loggedIn li.lu-gh-shown a {
+    border-right: 13px solid #383838;
+    background-image: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/DropdownArrowUp.svg);
+}
+#lu-gh-links li.lu-gh-shown a, #lu-gh-links li:hover a, #lu-gh-user li:hover a, #lu-gh-user-container li:hover a {
+    background: 0 0;
+    color: #fff;
+    margin-top: 0;
+}
+#lu-gh-links li.lu-gh-active, #lu-gh-links li.lu-gh-active:hover {
+    margin-top: 3px;
+}
+#lu-gh-links li.lu-gh-active a, #lu-gh-links li.lu-gh-active:hover a {
+    background: padding-box #244372;
+    border-top: 1px solid #4f6a93;
+    color: #fff;
+    cursor: default;
+    padding-bottom: 3px;
+    padding-top: 0;
+    margin-top: 0;
+    background-image: -moz-linear-gradient(bottom, #224170, #2f4f7f);
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#224170), to(#2f4f7f));
+    background-image: -webkit-linear-gradient(bottom, #224170, #2f4f7f);
+    background-image: -o-linear-gradient(bottom, #224170, #2f4f7f);
+    background-image: -ms-linear-gradient(bottom, #224170, #2f4f7f);
+    background-image: linear-gradient(to top, #224170, #2f4f7f);
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+}
+#lu-gh-links #lu-gh-official {
+    margin: 0;
+}
+#lu-gh-links #lu-gh-official a {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/LU-Monogram.svg)center center no-repeat;
+    width: 44px;
+    height: 0;
+    padding: 44px 0 0;
+    margin: 0 0 0 7px;
+}
+#lu-gh-links #lu-gh-official a:hover {
+    opacity: .8;
+}
+#lu-gh-links #lu-gh-official.lu-gh-active a {
+    padding-bottom: 3px;
+}
+#lu-gh-links #lu-gh-official.lu-gh-active {
+    margin-top: 2px;
+}
+#lu-gh-links #lu-gh-more {
+    background: url(https://www.liberty.edu/wwwAdmin/globals/globalheader/icons/More.svg)center center no-repeat;
+    opacity: .75;
+    width: 50px;
+    height: 0;
+    padding: 30px 10px 12px;
+    margin: 0 10px;
+    line-height: 100px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    display: block;
+}
+#lu-gh-apps-container #lu-gh-apps-list li a:hover span, #lu-gh-links #lu-gh-more:hover {
+    opacity: 1;
+}
+.lu-gh-control div.first-child {
+    float: left;
+}
+.lu-gh-control div.last-child {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)0 -26px no-repeat;
+    float: left;
+    margin: 7px 0 0 8px;
+    width: 7px;
+    height: 5px;
+}
+#lu-gh-bar li:hover .lu-gh-control div.last-child {
+    background-position: -17px -26px;
+}
+#lu-gh-bar #lu-gh-links li.lu-gh-shown .lu-gh-control {
+    background-color: #383838;
+    color: #fff;
+    opacity: 1;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#lu-gh-bar #lu-gh-links .lu-gh-active {
+    display: none;
+}
+#lu-gh-bar #lu-gh-links li a.lu-gh-active-link {
+    box-shadow: inset 0 -3px 0 #319ed9;
+    border-radius: 0;
+    color: #fff;
+}
+#lu-gh-bar li.lu-gh-shown .lu-gh-control div.last-child, .lu-gh-shown .lu-gh-control div.last-child {
+    background-position: -34px -26px;
+}
+#lu-gh-content #lu-gh-content-close, #lu-gh-content #lu-gh-content-close:active, #lu-gh-content #lu-gh-content-close:hover, #lu-gh-content #lu-gh-content-close:visited {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)0 -36px no-repeat;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-indent: -99999px;
+    top: 20px;
+    right: 20px;
+    width: 13px;
+    height: 13px;
+    z-index: 3;
+}
+#lu-gh-bar #lu-gh-user li.lu-gh-shown .lu-gh-control {
+    background-color: #383838;
+    color: #fff;
+}
+#lu-gh-profile-content ul li a {
+    display: block;
+    color: #222;
+    padding: 14px 14px 12px 45px;
+    font-size: 12px;
+    text-decoration: none;
+}
+#lu-gh-profile-content ul li .lu-gh-edit-info {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/EditInfo.svg)14px center no-repeat;
+}
+#lu-gh-profile-content ul li .lu-gh-password-reset {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Password.svg)14px center no-repeat;
+}
+#lu-gh-profile-content ul li #lu-gh-sign-out {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/SignOut.svg)14px center no-repeat;
+}
+#lu-gh-content #lu-gh-profile-content ul li:hover a {
+    background-color: #D8D8D8;
+}
+#lu-gh-apps-search-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background: #383838;
+    z-index: 1;
+    display: none;
+}
+#lu-gh-apps-search-container input {
+    height: 100%;
+    width: 256px;
+    padding: 0 10px 0 33px;
+    border: none;
+    border-left: 19px solid #383838;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 0;
+    color: #6c7171;
+    font-style: italic;
+    font-size: 12px;
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Search.svg)center left no-repeat;
+}
+#lu-gh-apps-search-container input:focus {
+    color: #fff;
+    font-style: normal;
+}
+#lu-gh-apps-container {
+    position: fixed;
+    top: 0;
+    padding-top: 44px;
+    background: #222;
+    width: 44px;
+    height: 100%;
+    right: 0;
+    z-index: 4;
+    overflow: visible;
+}
+#lu-gh-apps-container .lu-gh-apps-sidebar-content {
+    visibility: hidden;
+}
+#lu-gh-apps-container.open .lu-gh-apps-sidebar-content {
+    visibility: hidden!important;
+}
+#lu-gh-apps-container li.lu-gh-mobileShow {
+    display: none;
+}
+#lu-gh-apps-container #lu-gh-apps-sidebar-content {
+    height: 100%}
+#lu-gh-apps-container #lu-gh-apps-sidebar-content ul {
+    overflow: hidden;
+    height: 100%}
+#lu-gh-apps-container #lu-gh-apps-list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+}
+#lu-gh-apps-container #lu-gh-apps-list li {
+    clear: both;
+    float: none;
+    height: 44px;
+    position: relative;
+}
+#lu-gh-apps-container #lu-gh-apps-list li a {
+    color: #fff;
+    position: relative;
+    display: block;
+    float: right;
+    width: 100%;
+    height: 44px;
+}
+#lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-icon-container {
+    background-color: #222;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+#lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-favorite, #lu-gh-apps-container #lu-gh-apps-list span {
+    float: left;
+    opacity: .3;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+#lu-gh-sidebar-tooltips, .lu-gh-notify {
+    font-family: Roboto, Arial, sans-serif;
+}
+#lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-icon {
+    padding: 44px 0 0;
+    background-size: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    width: 44px;
+}
+#lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-label {
+    padding-top: 14px;
+    padding-bottom: 13px;
+    position: absolute;
+    left: 56px;
+    top: 0;
+    width: 200px;
+    z-index: 1;
+    line-height: 18px;
+}
+#lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-icon.lu-gh-app-initials {
+    padding: 0;
+    height: 23px;
+    width: 23px;
+    display: block;
+    background: #fff;
+    border-radius: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 22px;
+    margin: 10px;
+    font-size: 10px;
+}
+#lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-favorite {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 44px;
+    padding-left: 50px;
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Favorites_Off.svg)19px center no-repeat;
+    background-size: 18px;
+    z-index: 2;
+    cursor: pointer;
+}
+#lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-favorite-selected, #lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-favorite:hover {
+    background-image: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Favorites_On.svg);
+    opacity: 1;
+}
+#lu-gh-apps-container #lu-gh-apps-toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Drawer-Menu.svg);
+    background-color: #222;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 0;
+    width: 44px;
+    padding: 44px 0 0;
+    line-height: 100px;
+    overflow: hidden;
+    margin-right: 0;
+    opacity: .75;
+    z-index: 2;
+}
+#lu-gh-apps-container #lu-gh-apps-toggle:hover {
+    opacity: 1;
+}
+#lu-gh-announcements .first-child, #lu-gh-apps .first-child {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)0 -94px;
+    overflow: hidden;
+    text-indent: -99999px;
+    width: 20px;
+    height: 20px;
+}
+#lu-gh-sidebar-tooltips {
+    position: absolute;
+    visibility: hidden;
+    background: #222;
+    color: #fff;
+    padding: 15px 10px;
+    width: auto;
+    white-space: nowrap;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 98;
+}
+#lu-gh-sidebar-tooltips:after, #lu-gh-sidebar-tooltips:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+#lu-gh-sidebar-tooltips:after {
+    border-color: rgba(255, 255, 203, 0);
+    border-left-color: #222;
+    border-width: 8px;
+    margin-top: -8px;
+}
+#lu-gh-sidebar-tooltips:before {
+    border-color: rgba(192, 192, 154, 0);
+    border-left-color: #222;
+    border-width: 9px;
+    margin-top: -9px;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content {
+    display: block;
+    background: #ffffcb;
+    border: 1px solid #c0c09a;
+    padding: 3px;
+    color: #666;
+    min-width: 100px;
+    visibility: visible;
+    position: absolute;
+    right: 100%}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_top:after, .lu-gh-flames-tip .lu-gh-flames-tip-content.tip_top:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_top:after {
+    border-color: rgba(255, 255, 203, 0);
+    border-top-color: #ffffcb;
+    border-width: 8px;
+    margin-left: -8px;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_top:before {
+    border-color: rgba(192, 192, 154, 0);
+    border-top-color: #c0c09a;
+    border-width: 9px;
+    margin-left: -9px;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_right:after, .lu-gh-flames-tip .lu-gh-flames-tip-content.tip_right:before {
+    right: 100%;
+    left: auto;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.lu-gh-flames-tip span.tip_right:after {
+    border-color: rgba(255, 255, 203, 0);
+    border-right-color: #ffffcb;
+    border-width: 8px;
+    margin-top: -8px;
+}
+.lu-gh-flames-tip span.tip_right:before {
+    border-color: rgba(192, 192, 154, 0);
+    border-right-color: #c0c09a;
+    border-width: 9px;
+    margin-top: -9px;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_left:after, .lu-gh-flames-tip .lu-gh-flames-tip-content.tip_left:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_left:after {
+    border-color: rgba(255, 255, 203, 0);
+    border-left-color: #ffffcb;
+    border-width: 8px;
+    margin-top: -8px;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_left:before {
+    border-color: rgba(192, 192, 154, 0);
+    border-left-color: #c0c09a;
+    border-width: 9px;
+    margin-top: -9px;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_bottom:after, .lu-gh-flames-tip .lu-gh-flames-tip-content.tip_bottom:before {
+    bottom: 100%;
+    top: auto;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_bottom:after {
+    border-color: rgba(255, 255, 203, 0);
+    border-bottom-color: #ffffcb;
+    border-width: 8px;
+    margin-left: -8px;
+}
+.lu-gh-flames-tip .lu-gh-flames-tip-content.tip_bottom:before {
+    border-color: rgba(192, 192, 154, 0);
+    border-bottom-color: #c0c09a;
+    border-width: 9px;
+    margin-left: -9px;
+}
+#lu-gh-announcements .last-child, #lu-gh-apps .last-child {
+    display: none;
+}
+#lu-gh-apps .first-child {
+    background-position: 0 -120px;
+}
+li:hover a#lu-gh-announcements .first-child {
+    background-position: -30px -94px;
+}
+li:hover a#lu-gh-apps .first-child {
+    background-position: -30px -120px;
+}
+li.lu-gh-shown a#lu-gh-announcements .first-child {
+    background-position: -60px -94px;
+}
+li.lu-gh-shown a#lu-gh-apps .first-child {
+    background-position: -60px -120px;
+}
+.lu-gh-border {
+    border: 2px solid #20406e;
+    border-width: 0 0 2px;
+}
+#lu-gh-announcements-list, #lu-gh-announcements-list ul li, #lu-gh-announcements-slides {
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+}
+#lu-gh-tray {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)0 -54px;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    margin-top: -1px;
+    padding-top: 1px;
+    position: absolute;
+    width: 68px;
+    height: 21px;
+    z-index: 1;
+}
+#lu-gh-tray a, #lu-gh-tray a:active, #lu-gh-tray a:hover, #lu-gh-tray a:visited {
+    display: block;
+    text-indent: -99999px;
+    width: 15px;
+    height: 9px;
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)0 -81px;
+    position: relative;
+    top: 0;
+    left: 27px;
+    border: none;
+}
+#lu-gh .scroll-element, #lu-gh-cache, .lu-gh-content-auto #lu-gh-content-close, .lu-gh-content-auto #lu-gh-tray {
+    display: none;
+}
+#lu-gh-overlay {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%}
+#lu-gh-content .lu-gh-loading {
+    padding: 0 0 0 35px;
+    line-height: 50px;
+    font-size: 12px;
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/loading.gif)10px 18px no-repeat;
+    width: 75px;
+    margin: 0 auto;
+}
+#lu-gh-cache {
+    position: absolute;
+    left: -99999px;
+    width: 10px;
+}
+.lu-gh-notify {
+    border: 1px solid #8c2929;
+    color: #fff;
+    display: none;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    padding: 0 2px;
+    position: absolute;
+    text-align: center;
+    top: -3px;
+    left: 17px;
+    background-color: #932b2b;
+    background-image: -moz-linear-gradient(bottom, #932b2b, #b03434);
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#932b2b), to(#b03434));
+    background-image: -webkit-linear-gradient(bottom, #932b2b, #b03434);
+    background-image: -o-linear-gradient(bottom, #932b2b, #b03434);
+    background-image: -ms-linear-gradient(bottom, #932b2b, #b03434);
+    background-image: linear-gradient(to top, #932b2b, #b03434);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.lu-gh-loaderror {
+    padding: 10px 20px;
+    color: #af0000;
+    font-weight: 700;
+    font-size: 11px;
+}
+.lu-gh-full .lu-gh-loaderror {
+    text-align: center;
+}
+#lu-gh-links li.lu-gh-shown a .lu-gh-notify, #lu-gh-links li:hover a .lu-gh-notify, #lu-gh-user li:hover a .lu-gh-notify {
+    top: -1px;
+}
+#lu-gh-bar li.lu-gh-shown .lu-gh-control .lu-gh-notify {
+    top: 1px;
+}
+#lu-gh .scroll-wrapper {
+    overflow: hidden!important;
+    padding: 0!important;
+    position: relative;
+    height: 100%}
+#lu-gh .scroll-wrapper>.scroll-content {
+    border: none!important;
+    box-sizing: content-box!important;
+    height: auto;
+    left: 0;
+    max-height: none;
+    overflow-y: scroll!important;
+    padding: 0;
+    top: 0;
+    width: auto!important;
+}
+#lu-gh .scroll-wrapper>.scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+#lu-gh .scroll-element, #lu-gh .scroll-element div {
+    box-sizing: content-box;
+}
+#lu-gh .scroll-element.scroll-x.scroll-scrollx_visible, #lu-gh .scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+#lu-gh .scroll-element .scroll-arrow, #lu-gh .scroll-element .scroll-bar {
+    cursor: default;
+}
+#lu-gh .scroll-textarea {
+    border: 1px solid #ccc;
+    border-top-color: #999;
+}
+#lu-gh .scroll-textarea>.scroll-content {
+    overflow: hidden!important;
+}
+#lu-gh .scroll-textarea>.scroll-content>textarea {
+    border: none!important;
+    box-sizing: border-box;
+    height: 100%!important;
+    max-height: none!important;
+    overflow-y: scroll!important;
+    outline: 0;
+    padding: 2px;
+    top: 0;
+    width: 100%!important;
+}
+#lu-gh .scroll-textarea>.scroll-content>textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+#lu-gh .scrollbar-macosx>.scroll-element, #lu-gh .scrollbar-macosx>.scroll-element div {
+    background: 0 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1001;
+}
+#lu-gh .scrollbar-macosx>.scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%}
+#lu-gh .scrollbar-macosx>.scroll-element .scroll-element_track {
+    display: block;
+    background: #444;
+    width: 5px;
+    left: -9px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -o-transition: opacity .2s linear;
+    -ms-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+#lu-gh .scrollbar-macosx>.scroll-element .scroll-bar, #lu-gh .scrollbar-macosx>.scroll-element .scroll-element_track {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+}
+#lu-gh .scrollbar-macosx>.scroll-element .scroll-bar {
+    background-color: #6C6E71;
+    display: block;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -o-transition: opacity .2s linear;
+    -ms-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+#lu-gh .scrollbar-macosx:hover>.scroll-element .scroll-bar, #lu-gh .scrollbar-macosx>.scroll-element.scroll-draggable .scroll-bar, #lu-gh .scrollbar-macosx>.scroll-element:hover .scroll-element_track {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: .7;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-x {
+    bottom: 0;
+    height: 0;
+    left: 0;
+    min-width: 100%;
+    overflow: visible;
+    width: 100%}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-x .scroll-bar {
+    height: 7px;
+    min-width: 10px;
+    top: -7px;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-y .scroll-bar {
+    left: -8px;
+    min-height: 10px;
+    width: 5px;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-x .scroll-element_outer {
+    left: 2px;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-x .scroll-element_size {
+    left: -4px;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-y .scroll-element_outer {
+    top: 2px;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-y .scroll-element_size {
+    top: -4px;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+    left: -11px;
+}
+#lu-gh .scrollbar-macosx>.scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+    top: -11px;
+}
+#lu-gh-apps-container #lu-gh-mobile-logo, #lu-gh-login-mobile, #lu-gh-mobile-apps-toggle {
+    display: none;
+}
+#lu-gh-apps-list-container {
+    overflow-x: hidden!important;
+}
+@media only screen and (max-width:1024px) {
+    html {
+    padding-right: 0!important;
+    margin-right: 0!important;
+}
+.g-lu-responsive #lu-gh {
+    display: block;
+}
+.g-lu-responsive #lu-gh-bar {
+    display: none!important;
+}
+.g-lu-responsive html {
+    padding-top: 0!important;
+    padding-right: 0!important;
+    margin-top: 0!important;
+}
+.g-lu-responsive #lu-gh-apps-container #lu-gh-mobile-logo {
+    display: none;
+}
+.g-lu-responsive #lu-gh-mobile-apps-toggle.appToggleEmbed {
+    display: block;
+    position: fixed;
+    top: 12px;
+    right: 26px;
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Drawer-Menu-Mobile.svg)center center no-repeat;
+    width: 50px;
+    height: 0;
+    padding-top: 50px;
+    overflow: hidden;
+    line-height: 80px;
+    background-size: 24px;
+}
+.g-lu-responsive #lu-gh #lu-gh-login-mobile.appToggleEmbed {
+    display: block;
+    position: fixed;
+    top: 17px;
+    right: 26px;
+    background: #3b99fb;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 2px;
+    margin: 0 0 0 20px;
+    padding: 8px 20px;
+    transition: background .25s ease-out;
+}
+.g-lu-responsive #lu-gh #lu-gh-login-mobile.appToggleEmbed:hover {
+    background: #097ffa;
+}
+.g-lu-responsive #lu-gh #lu-gh-apps-toggle {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/close.svg)center center no-repeat;
+    top: 12px;
+    right: 24px;
+}
+.g-lu-responsive #lu-gh #lu-gh-login-mobile.lu-gh-loggedIn {
+    display: none;
+}
+.g-lu-responsive #lu-gh #lu-gh-login-mobile.lu-gh-loggedOut {
+    display: block;
+}
+.g-lu-responsive #lu-gh-apps-container {
+    width: 50%;
+    right: -100%;
+    padding-top: 119px;
+}
+.g-lu-responsive #lu-gh-apps-search-container {
+    display: block;
+    top: 75px;
+}
+.g-lu-responsive #lu-gh-apps-search-container input {
+    width: 100%}
+.g-lu-responsive #lu-gh-apps-container li.lu-gh-mobileShow {
+    display: block!important;
+    background: #383838;
+}
+.g-lu-responsive #lu-gh-apps-container li.lu-gh-mobileShow h3 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #fff;
+    padding: 15px 0 0 23px;
+    font-size: 16px;
+}
+.g-lu-responsive #lu-gh-apps-container #lu-gh-apps-list li.lu-gh-mobileShow .lu-gh-app-icon-container {
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 44px;
+    margin-left: 19px;
+    background-size: 12px;
+    z-index: 2;
+}
+.g-lu-responsive #lu-gh-apps-container li.lu-gh-edit-info .lu-gh-app-icon-container {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/EditInfo_Mobile.svg)center center no-repeat;
+}
+.g-lu-responsive #lu-gh-apps-container li.lu-gh-password-reset .lu-gh-app-icon-container {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/ChangePassword_Mobile.svg)center center no-repeat;
+}
+.g-lu-responsive #lu-gh-apps-container li#lu-gh-sign-out .lu-gh-app-icon-container {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/SignOut_Mobile.svg)center center no-repeat;
+}
+.g-lu-responsive #lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-favorite:hover {
+    background-image: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Favorites_Off.svg);
+    opacity: .7;
+}
+.g-lu-responsive #lu-gh-apps-container #lu-gh-apps-list .lu-gh-app-favorite-selected:hover {
+    background-image: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Favorites_On.svg);
+    opacity: 1;
+}
+}
+@media only screen and (max-width:560px) {
+    .g-lu-responsive #lu-gh-apps-container {
+    width: 100%}
+.g-lu-responsive #lu-gh #lu-gh-login-mobile.appToggleEmbed, .g-lu-responsive #lu-gh-mobile-apps-toggle.appToggleEmbed {
+    right: 15px;
+}
+.g-lu-responsive #lu-gh-apps-container #lu-gh-mobile-logo {
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/icons/Wordmark_Stacked.svg)center center no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: 40px;
+    overflow: hidden;
+    line-height: 50px;
+}
+}
+@media only screen and (max-width:340px) {
+    .g-lu-responsive #lu-gh #lu-gh-login-mobile.appToggleEmbed {
+    padding: 6px 12px;
+}
+}
+#lu-gh-announcements-content {
+    width: 299px;
+}
+#lu-gh-announcements-content .lu-gh-content {
+    padding: 0;
+    margin: 0;
+}
+#lu-gh-announcements-content .lu-gh-announcements-control {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/control.fade.png)repeat-y;
+    display: none;
+    top: 6px;
+    left: 6px;
+    position: absolute;
+    width: 60px;
+    height: 162px;
+    z-index: 50;
+}
+#lu-gh-announcements-content .lu-gh-announcements-control span {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)-76px -54px no-repeat;
+    display: block;
+    position: absolute;
+    text-indent: -99999px;
+    top: 75px;
+    left: 10px;
+    width: 11px;
+    height: 17px;
+}
+#lu-gh-announcements-content .lu-gh-announcements-control#lu-gh-announcements-pager, #lu-gh-announcements-list ul li.lu-gh-hidden {
+    display: none;
+}
+#lu-gh-announcements-content .lu-gh-announcements-control#lu-gh-announcements-next {
+    background-position: -60px 0;
+    left: auto;
+    right: 6px;
+}
+#lu-gh-announcements-content .lu-gh-announcements-control#lu-gh-announcements-next span {
+    background-position: -94px -54px;
+    left: auto;
+    right: 10px;
+}
+#lu-gh-announcements-slides {
+    margin: 0;
+    overflow: hidden;
+    padding: 6px 6px 30px;
+    position: relative;
+    width: 287px;
+    height: 142px;
+}
+#lu-gh-announcements-slides ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 287px;
+    height: 162px;
+}
+#lu-gh-announcements-slides ul li {
+    padding: 0;
+    margin: 0;
+    width: 287px;
+    height: 162px;
+}
+#lu-gh-announcements-slides ul li img {
+    width: 287px;
+    height: 162px;
+}
+#lu-gh-announcements-list {
+    height: 230px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+#lu-gh-announcements-list .lu-gh-scroll {
+    overflow: hidden;
+}
+#lu-gh-announcements-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#lu-gh-announcements-list ul li {
+    border-left: 2px solid transparent;
+    cursor: pointer;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 7px 20px 7px 18px;
+    position: relative;
+}
+#lu-gh-announcements-list ul li.lu-gh-hover {
+    border-left: 2px solid #20406E;
+}
+#lu-gh-announcements-list ul li.lu-gh-active .lu-gh-headline, #lu-gh-announcements-list ul li.lu-gh-active .lu-gh-headline:hover, #lu-gh-announcements-list ul li.lu-gh-active .lu-gh-type {
+    color: #a90404;
+}
+#lu-gh-announcements-list ul li.lu-gh-unread {
+    background-color: #efefef;
+}
+#lu-gh-announcements-list ul li.lu-gh-loading {
+    background-position: -99999px -99999px;
+    line-height: 10px;
+    padding: 0;
+    width: auto;
+    height: 10px;
+}
+#lu-gh-announcements-list ul li.lu-gh-loading.lu-gh-active {
+    background-position: 141px 7px;
+    line-height: 30px;
+    height: 30px;
+}
+#lu-gh-announcements-list ul li .lu-gh-headline, #lu-gh-announcements-list ul li .lu-gh-headline:hover {
+    color: #565656;
+    display: block;
+    font-size: 11px;
+    line-height: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+#lu-gh-announcements-list ul li .lu-gh-date {
+    color: #989898;
+    display: block;
+    font-size: 11px;
+    line-height: 17px;
+    font-weight: 400;
+}
+#lu-gh-announcements-list ul li .lu-gh-type {
+    color: #a4a4a4;
+    display: block;
+    float: right;
+    font-size: 11px;
+    line-height: 17px;
+    font-weight: 400;
+    margin: 0 0 10px 30px;
+    padding: 0;
+}
+#lu-gh-announcements-list .mCSB_container {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools {
+    opacity: .75;
+    width: 16px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+#lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_draggerContainer {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+}
+#lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: padding-box #a4a4a4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: .5;
+    -khtml-opacity: .5;
+    -webkit-opacity: .5;
+    opacity: .5;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+}
+#lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: .8;
+    -khtml-opacity: .8;
+    -webkit-opacity: .8;
+    opacity: .8;
+}
+#lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, #lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity: .9;
+    -khtml-opacity: .9;
+    -webkit-opacity: .9;
+    opacity: .9;
+}
+#lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_buttonDown, #lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_buttonUp, #lu-gh-announcements-list .mCustomScrollBox .mCSB_scrollTools .mCSB_draggerRail {
+    display: none;
+}
+#lu-gh-announcements-list .mCustomScrollBox:hover .mCSB_scrollTools {
+    opacity: 1;
+}
+#lu-gh-apps-content {
+    width: 240px;
+}
+#lu-gh-apps-content ul {
+    float: none;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    width: 220px;
+}
+#lu-gh-apps-content ul li {
+    border: 2px solid #f7f7f7;
+    border-width: 0 0 2px;
+    margin: 0 0 7px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 220px;
+    height: 30px;
+}
+#lu-gh-apps-content ul li span {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)0 -140px no-repeat;
+    display: block;
+    padding: 5px 0;
+    position: absolute;
+    top: 2px;
+    right: 12px;
+    width: 15px;
+    height: 14px;
+}
+#lu-gh-apps-content ul li span:hover {
+    background-position: -17px -140px;
+}
+#lu-gh-apps-content ul li span.lu-gh-apps-favorite, #lu-gh-apps-content ul li span.lu-gh-apps-favorite:hover {
+    background-position: -35px -145px;
+    cursor: pointer;
+    top: 0;
+    right: 10px;
+    width: 18px;
+    height: 24px;
+}
+#lu-gh-apps-content ul li a {
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    width: 218px;
+    height: 28px;
+    background-image: linear-gradient(bottom, #eee 0, #fff 35%);
+    background-image: -o-linear-gradient(bottom, #eee 0, #fff 35%);
+    background-image: -moz-linear-gradient(bottom, #eee 0, #fff 35%);
+    background-image: -webkit-linear-gradient(bottom, #eee 0, #fff 35%);
+    background-image: -ms-linear-gradient(bottom, #eee 0, #fff 35%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(.35, #fff));
+}
+#lu-gh-apps-content ul li a span.app-icon {
+    border: none;
+    display: block;
+    line-height: 20px;
+    padding: 7px 0 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+}
+#lu-gh-apps-content ul li a span.app-icon img {
+    max-width: 20px;
+    max-height: 20px;
+}
+#lu-gh-apps-content ul li a span {
+    background: 0 0;
+    color: #374d7e;
+    display: block;
+    font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    overflow: hidden;
+    padding: 0 33px 0 32px;
+    position: relative;
+    top: 0;
+    right: auto;
+    width: 153px;
+    height: 28px;
+}
+#lu-gh-login-content .lu-gh-error, #lu-gh-login-content a, #lu-gh-login-content input[type=button], #lu-gh-login-content label, #lu-gh-login-content span label, #lu-gh-more-content ul li, #lu-gh-more-content ul li ul li a:active, #lu-gh-more-content ul li ul li a:link, #lu-gh-more-content ul li ul li a:visited {
+    font-family: Roboto, Arial, sans-serif;
+}
+#lu-gh-apps-content ul li a:focus, #lu-gh-apps-content ul li a:hover, #lu-gh-apps-content ul li:focus a, #lu-gh-apps-content ul li:hover a {
+    background-image: linear-gradient(bottom, #fff 65%, #eee 100%);
+    background-image: -o-linear-gradient(bottom, #fff 65%, #eee 100%);
+    background-image: -moz-linear-gradient(bottom, #fff 65%, #eee 100%);
+    background-image: -webkit-linear-gradient(bottom, #fff 65%, #eee 100%);
+    background-image: -ms-linear-gradient(bottom, #fff 65%, #eee 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.65, #fff), color-stop(1, #eee));
+}
+#lu-gh-apps-content ul li.lu-gh-none {
+    border: none;
+    display: none;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0;
+}
+#lu-gh-apps-content ul li.lu-gh-message {
+    border: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+#lu-gh-apps-content.lu-gh-full {
+    width: 100%}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header {
+    border: 1px solid #ddd;
+    border-width: 0 0 1px;
+    position: relative;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header>div {
+    margin: 0 auto;
+    padding: 10px 10px 0;
+    position: relative;
+    width: 940px;
+    height: 43px;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header ul {
+    padding: 0;
+    width: auto;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header ul li {
+    border: none;
+    float: left;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 30px;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header ul li.lu-gh-apps-active a {
+    color: #18293f;
+    cursor: default;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header ul li a {
+    background: 0 0;
+    border: none;
+    color: #a1a1a1;
+    font-size: 12px;
+    padding: 9px 26px 0 0;
+    text-decoration: none;
+    width: auto;
+    height: 12px;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header ul li a:focus, #lu-gh-apps-content.lu-gh-full .lu-gh-header ul li a:hover {
+    color: #18293f;
+    text-decoration: none;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-header div.lu-gh-apps-active {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)-30px -81px no-repeat;
+    bottom: 0;
+    left: 10px;
+    position: absolute;
+    width: 12px;
+    height: 7px;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-container {
+    background: #f0f0f0;
+    border: 1px solid #fff;
+    border-width: 1px 0 0;
+    min-height: 39px;
+    position: relative;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-container>div {
+    margin: 0 auto;
+    padding: 23px 10px 0;
+    width: 940px;
+    height: auto;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-container .lu-gh-block {
+    width: 940px;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-container ul {
+    padding: 0;
+    width: 960px;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-container ul li {
+    border-color: #e8e8e8;
+    float: left;
+    margin-right: 20px;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-container ul li>span {
+    cursor: pointer;
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-trayfade {
+    height: 20px;
+    position: relative;
+    z-index: 1501;
+    background-color: #f0f0f0;
+    background-image: -moz-linear-gradient(bottom, #fff, #f0f0f0);
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#fff), to(#f0f0f0));
+    background-image: -webkit-linear-gradient(bottom, #fff, #f0f0f0);
+    background-image: -o-linear-gradient(bottom, #fff, #f0f0f0);
+    background-image: -ms-linear-gradient(bottom, #fff, #f0f0f0);
+    background-image: linear-gradient(to top, #fff, #f0f0f0);
+}
+#lu-gh-apps-content.lu-gh-full .lu-gh-trayfade:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    background-image: -moz-linear-gradient(bottom, #f0f0f0, rgba(240, 240, 240, 0));
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#f0f0f0), to(rgba(240, 240, 240, 0)));
+    background-image: -webkit-linear-gradient(bottom, #f0f0f0, rgba(240, 240, 240, 0));
+    background-image: -o-linear-gradient(bottom, #f0f0f0, rgba(240, 240, 240, 0));
+    background-image: -ms-linear-gradient(bottom, #f0f0f0, rgba(240, 240, 240, 0));
+    background-image: linear-gradient(to top, #f0f0f0, rgba(240, 240, 240, 0));
+}
+#lu-gh-apps-scrollable {
+    max-height: 174px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+#lu-gh-apps-search {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/search.png)8px 7px no-repeat padding-box #fafafa;
+    border: 1px solid #c9c9c9;
+    color: #bfbfbf;
+    float: left;
+    font-size: 12px;
+    line-height: 25px;
+    margin: 5px 30px 0 0;
+    outline: 0;
+    padding: 0 14px 0 26px;
+    width: 130px;
+    height: 25px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+}
+#lu-gh-apps-search.lu-gh-active {
+    background-color: #fff;
+    border: 1px solid #5ca5e8;
+    color: #000;
+    -webkit-box-shadow: 0 0 4px rgba(92, 165, 232, 1), inset 0 0 2px rgba(92, 165, 232, .6);
+    -moz-box-shadow: 0 0 4px rgba(92, 165, 232, 1), inset 0 0 2px rgba(92, 165, 232, .6);
+    box-shadow: 0 0 4px rgba(92, 165, 232, 1), inset 0 0 2px rgba(92, 165, 232, .6);
+}
+#lu-gh-user li #lu-gh-login {
+    background: #3b99fb;
+    color: #fff;
+    border-radius: 0;
+    margin: 0 0 0 20px;
+    padding: 13px 40px;
+    transition: background .25s ease-out;
+}
+#lu-gh-user li #lu-gh-login:hover {
+    background: #097ffa;
+}
+#lu-gh-user li #lu-gh-login.lu-gh-login-fail {
+    background: 0 0;
+    cursor: default;
+}
+#lu-gh-user li #lu-gh-login.lu-gh-login-fail:hover {
+    background: 0 0;
+}
+#lu-gh-login-content {
+    background: #fff;
+    width: 257px;
+}
+#lu-gh-login-content .lu-gh-content {
+    padding: 14px 17px;
+    width: 223px;
+}
+#lu-gh-login-content form {
+    overflow: hidden;
+    padding: 0 0 22px;
+    width: 223px;
+}
+#lu-gh-login-content .lu-gh-error {
+    color: #af0000;
+    display: none;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 0 0 11px;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+#lu-gh-login-content input[type=text], #lu-gh-login-content input[type=password] {
+    background: padding-box #fbfbfb;
+    border: 1px solid #b9b9b9;
+    color: #ccc;
+    display: block;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+    outline: 0;
+    padding: 0 12px;
+    width: 193px;
+    height: 28px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+}
+#lu-gh-login-content input[type=text].lu-gh-active, #lu-gh-login-content input[type=password].lu-gh-active {
+    background: #fff;
+    border-color: #4f6a93;
+    color: #333;
+}
+#lu-gh-login-content span {
+    background: padding-box #fff;
+    border: none;
+    display: block;
+    margin-bottom: 11px;
+    padding: 2px;
+    position: relative;
+    width: 219px;
+    height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+}
+#lu-gh-login-content span.lu-gh-active {
+    background: #b5c0d2;
+}
+#lu-gh-login-content span label {
+    background: 0 0;
+    border: none;
+    color: #ccc;
+    float: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+#lu-gh-login-content input[type=checkbox] {
+    float: left;
+    margin: 7px 0 0;
+    padding: 0;
+}
+#lu-gh-login-content label {
+    color: #203f6d;
+    float: left;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 0 5px;
+    padding: 7px 0 0;
+}
+#lu-gh-login-content input[type=button] {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    outline: 0;
+    padding: 0 10px;
+    width: auto;
+    height: 30px;
+    background-color: #224170;
+    background-image: -moz-linear-gradient(bottom, #224170, #2e4e7e);
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#224170), to(#2e4e7e));
+    background-image: -webkit-linear-gradient(bottom, #224170, #2e4e7e);
+    background-image: -o-linear-gradient(bottom, #224170, #2e4e7e);
+    background-image: -ms-linear-gradient(bottom, #224170, #2e4e7e);
+    background-image: linear-gradient(to top, #224170, #2e4e7e);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+#lu-gh-login-content input[type=button]:focus, #lu-gh-login-content input[type=button]:hover {
+    background-color: #284d85;
+    background-image: -moz-linear-gradient(bottom, #284d85, #375c95);
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#284d85), to(#375c95));
+    background-image: -webkit-linear-gradient(bottom, #284d85, #375c95);
+    background-image: -o-linear-gradient(bottom, #284d85, #375c95);
+    background-image: -ms-linear-gradient(bottom, #284d85, #375c95);
+    background-image: linear-gradient(to top, #284d85, #375c95);
+}
+#lu-gh-login-content input[type=button].lu-gh-disabled {
+    color: #ccc;
+    cursor: default;
+    background-color: #1a3255;
+    background-image: -moz-linear-gradient(bottom, #1a3255, #233b60);
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#1a3255), to(#233b60));
+    background-image: -webkit-linear-gradient(bottom, #1a3255, #233b60);
+    background-image: -o-linear-gradient(bottom, #1a3255, #233b60);
+    background-image: -ms-linear-gradient(bottom, #1a3255, #233b60);
+    background-image: linear-gradient(to top, #1a3255, #233b60);
+}
+#lu-gh-login-content a {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)-73px -148px no-repeat;
+    color: #20406e;
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0 4px 0 10px;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+#lu-gh-login-content a:focus, #lu-gh-login-content a:hover {
+    color: #3564a8;
+    text-decoration: underline;
+}
+#lu-gh-login-content a.last-child {
+    background-position: -145px -62px;
+    cursor: default;
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+    text-indent: -99999px;
+    width: 11px;
+    height: 14px;
+}
+#lu-gh-more-content {
+    overflow: hidden;
+    padding: 35px 0 30px;
+    width: 960px;
+    margin: 0 auto;
+}
+#lu-gh-more-content ul {
+    float: left;
+    width: 960px;
+    padding: 0 20px 0 0;
+    list-style: none;
+    margin: 0;
+    display: block;
+}
+#lu-gh-more-content ul.lu-gh-column2, #lu-gh-more-content ul.lu-gh-column2 ul {
+    width: 470px;
+}
+#lu-gh-more-content ul.lu-gh-column3, #lu-gh-more-content ul.lu-gh-column3 ul {
+    width: 306px;
+}
+#lu-gh-more-content ul.lu-gh-column4, #lu-gh-more-content ul.lu-gh-column4 ul {
+    width: 225px;
+}
+#lu-gh-more-content ul.lu-gh-column5, #lu-gh-more-content ul.lu-gh-column5 ul {
+    width: 176px;
+}
+#lu-gh-more-content ul.lu-gh-column6, #lu-gh-more-content ul.lu-gh-column6 ul {
+    width: 143px;
+}
+#lu-gh-more-content ul.lu-gh-last {
+    padding-right: 0;
+}
+#lu-gh-more-content ul li {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #333;
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0 0 12px;
+    border: 1px solid #d7d7d7;
+    border-width: 0 0 1px;
+    display: block;
+}
+#lu-gh-more-content ul li ul {
+    margin: 15px 0 0;
+}
+#lu-gh-more-content ul li ul li {
+    margin: 0;
+    padding: 8px 0;
+    border: none;
+}
+#lu-gh-more-content ul li ul li a:active, #lu-gh-more-content ul li ul li a:link, #lu-gh-more-content ul li ul li a:visited {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    color: #478fe1;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+#lu-gh-more-content ul li ul li a:focus, #lu-gh-more-content ul li ul li a:hover {
+    text-decoration: underline;
+    border: none;
+}
+#lu-gh-profile-content {
+    font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    width: 166px;
+}
+#lu-gh-profile-content .lu-gh-content, #lu-gh-profile-content .lu-gh-content ul {
+    padding: 0;
+    margin: 0;
+}
+#lu-gh-profile-content .lu-gh-block {
+    border: 1px solid #e7e7e7;
+    border-width: 0 0 1px;
+    overflow: hidden;
+    padding: 10px 10px 9px 20px;
+    position: relative;
+    width: 204px;
+}
+#lu-gh-profile-content .lu-gh-block:last-child {
+    border: none;
+    padding-bottom: 10px;
+}
+#lu-gh-profile-content .lu-gh-block p {
+    color: #989898;
+    margin: 0;
+    line-height: 1.5;
+}
+#lu-gh-profile-content .lu-gh-block p span, #lu-gh-profile-content .lu-gh-block p strong {
+    color: #565656;
+}
+#lu-gh-profile-content .lu-gh-block .lu-gh-edit {
+    background: url(https://www.liberty.edu/wwwadmin/globals/globalheader/images/gh.sprite.png?v3)-126px -103px no-repeat;
+    position: absolute;
+    text-indent: -99999px;
+    top: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+}
+#lu-gh-profile-content .lu-gh-block .lu-gh-edit:focus, #lu-gh-profile-content .lu-gh-block .lu-gh-edit:hover {
+    background-position: -144px -103px;
+}
+#lu-gh-profile-content .lu-gh-block .lu-gh-image {
+    float: left;
+    margin: 0 10px 0 -10px;
+    position: relative;
+    width: 63px;
+    min-height: 40px;
+}
+#lu-gh-profile-content .lu-gh-block .lu-gh-image img {
+    width: 63px;
+}
+#lu-gh-profile-content .lu-gh-block .lu-gh-image .lu-gh-edit {
+    background-position: -95px -95px;
+    top: 3px;
+    right: 3px;
+    width: 9px;
+    height: 9px;
+}
+#lu-gh-profile-content .lu-gh-block .lu-gh-image .lu-gh-edit:focus, #lu-gh-profile-content .lu-gh-block .lu-gh-image .lu-gh-edit:hover {
+    background-position: -109px -95px;
+}

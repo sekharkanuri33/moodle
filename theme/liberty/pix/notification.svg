@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>notification@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Matching-FCI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Course-Home-(updating-to-match-FCI-styles)" transform="translate(-1250.000000, -76.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="header" transform="translate(0.000000, 44.000000)">
+                <g id="notification">
+                    <path d="M1257,50 C1257.9625,50 1258.75,49.1692308 1258.75,48.1538462 L1255.25,48.1538462 C1255.25,49.1692308 1256.02875,50 1257,50 Z M1262.25,44.4615385 L1262.25,39.8461538 C1262.25,37.0123077 1260.815,34.64 1258.3125,34.0123077 L1258.3125,33.3846154 C1258.3125,32.6184615 1257.72625,32 1257,32 C1256.27375,32 1255.6875,32.6184615 1255.6875,33.3846154 L1255.6875,34.0123077 C1253.17625,34.64 1251.75,37.0030769 1251.75,39.8461538 L1251.75,44.4615385 L1250,46.3076923 L1250,47.2307692 L1264,47.2307692 L1264,46.3076923 L1262.25,44.4615385 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
