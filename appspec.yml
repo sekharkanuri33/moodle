@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /moodle-wwdata
+    destination: /tmp/new
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
